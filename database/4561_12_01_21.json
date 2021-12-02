@@ -1,0 +1,13 @@
+{
+    "name": "juan",
+    "uuid": "4561",
+    "serial_number": "234567",
+    "firmware_version": "2.04",
+    "BT_reads": "88",
+    "fob_reads": "99",
+    "jumper": "No",
+    "failure": "No power",
+    "notes": "SSSS",
+    "buttons": "save",
+    "date": "12_01_21"
+}
