@@ -2,12 +2,12 @@
     "name": "koko",
     "uuid": "7364",
     "serial_number": "812988",
-    "firmware_version": "2.05",
-    "BT_reads": "68",
+    "firmware_version": "2.03",
+    "BT_reads": "54",
     "fob_reads": "16",
     "jumper": "Yes",
-    "failure": "Locked nfc",
-    "notes": "everything failed",
+    "failure": "No power",
+    "notes": "not really",
     "buttons": "save",
     "date": "12_02_21"
 }

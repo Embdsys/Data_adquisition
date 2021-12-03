@@ -61,12 +61,18 @@ def main():
     ])
 
     # Create a info dictionary that will be empty until you click something
-    info2 = input_group('Add data', [
+    info2 = input_group('Add data:', [
         radio("Jumper on?", options=['Yes', 'No'], name= 'jumper'),
         radio("Test result:", options=['Locked nfc', 'No power', 'No fob read', 'Looped buzzer', 'No bt', 'All good'], name= "failure"),
         textarea('notes', rows=3, placeholder='Anything weird?', name='notes'),
-        actions('actions', [
+        actions('', [
             {'label': 'Save', 'value': 'save'},
+        ], name='buttons'),
+    ])
+
+    # Create a info dictionary that will be empty until you click something
+    info3 = input_group('If you want to check the database, else refresh to re-test', [
+        actions('', [
             {'label': 'Show database', 'value': 'confirm'},
         ], name='buttons'),
     ])
@@ -81,7 +87,7 @@ def main():
         #print (f'THIS:{info}')
         #THIS:{'buttons': 'save'}
 
-    if info['buttons'] == 'confirm':
+    if info3['buttons'] == 'confirm':
         showAnalytics()
     start_server(main, port=8986)
 

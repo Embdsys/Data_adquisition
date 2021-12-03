@@ -543,7 +543,9 @@ button
 
     <style>
 
-            span.association-graph-source::before { content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjUuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy8/fFQqAAAACXBIWXMAAA9hAAAPYQGoP6dpAAAC0klEQVR4nO3dMWsTYRzH8W+Pw4IQrZFu3RwUfAW+AMHxBm+4gjo46Obk0EmciiCOToIu8gy3HLi4ufkOinSvVSqItSLWJQ5JyBlySdqY3M/c7wOBpnla/twXQi/w9FnpdDqYjqjuAexvDiLGQcQ4iBgHEeMgYhxETJSlyW6WJjfqHsS6IuAV8DpLk7M1z2J0gzwH2sDVmmcxIA55cZilCcD6qAVZmqwCq0PfbgNf5zva0mkB+yEvxn5WFZe+rlq4BTz6V1M13AbwcdyCOEuTc72vDyrWbAPPSs9bwF7vlx/NOmFD9K/ZxOsVA/eBL8DOqAUhL46B4/7z3tsbwFHIi+8zDtoIpWs2UQTcBW6FvPg1r4FsenHIi8t1D2EDvlMX4yBiHESMg4hxEDEOIsZBxDiIGAcR4yBiHESMg4hxEDEOIsZBxDiIGAcR4yBiHESMg4hxEDEOIsZBxDiIGAcR4yBiHESMg4hxEDFxlib9nVOtkBc/ap3GiIELAI6hIQ558a3uIWwgytLkQ5Ymm3UPYl0xEICXWZq8C3nxaXjBiG3RrUUN10QR8BQ4A1ypWLMFHJYee4sZrZki4DbwG9itWLMNnC89NhYzWjPFwEO6u3D3Ry0Ysy3a5iAOeXGp7iFswHfqYhxEjIOIcRAxDiLGQcQ4iBgHEeMgYhxEjIOIcRAxDiLGQcQ4iBgHEeMgYhxEjIOIcRAxDiLGQcQ4iBgHEeMgYhxEjIOIcRAxDiLGQcT4cGIxPpxYjA8nFnOaw4n7u3Bb3t42tal3Ls9yOLF3455cGxh7XO0yHU6sOhcMZpt45PnSHE6sOhf4cOL/mg8nFnOaO/Vj4DGltzERqnPBCWZb6XSq/riyOvizLDEOIsZBxMRVL2RpchN4AlwE3gD3Ql78LL2+BrwArgOfgQchL97OddrpZ7sGvB/6sYX8k88sTdaBTeAO3duJnaHX1xhz3f4AKke0M4uhMrYAAAAASUVORK5CYII=);}
+                span.minigraph-f6::before { content: url(data:image/png;base64,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);}
+                    span.detail_graph-f6-::before { content: url(data:image/png;base64,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);}
+            span.association-graph-source::before { content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA2UAAAL4CAYAAAD7+V96AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjUuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy8/fFQqAAAACXBIWXMAAA9hAAAPYQGoP6dpAAAgwklEQVR4nO3dbcykd3Ue8GsGIoyLjWInRYrc2oE2KkqRCFVJaSViqqhVo0CmUsZkoC+p8oFIaakaSIWLGhGpwnKpkBOFNP7QBpQoo3hEOgFhlCYNFIkqogVHkdwKKWpwMSClIQgvjW1lmemHeYyf3Sz4JTtzzt7/30962N3ZYTl732vvHK7zP/dsv98HAACAGvPqAgAAAEamKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQMAACikKQOg3Gq5ePNqubiuug4AqKApA6CDtya5tboIAKgw2+/31TUAMLjVcvG7Sa5P8qnzr6832ztqKgKA03ludQEAkOST1QUAQBVJGQAtrJaLlyd5RZL7ckjNvrTebP+ktCgAOAFnygAot1ou3pLk40nuTXJTkncl+ZnSogDgRDRlAHTw40leneQrZz9+Z5JVXTkAcDqaMgA6eH6SC0memKn/9iSP1pUDAKdj0QcAHdyb5EM5NGf3JvmeJPdUFgQApyIpA6DcerO9M8ndSX49yWNJ3pLk7aVFAcCJSMoA6OKXknzi7PufXm+21gMDMARJGQDlVsvFa5M8nOSBs6/PrpaL76utCgBOQ1MGQAc/m+R9SW5JcmuSX0zyc6UVAcCJaMoA6OC6JPesN9svrDfbh5P89NlrADB5s/3eyD4AtVbLxf1JHknysbOXbk9yc5L3J8l6s5WaATBZFn0A0MFLz779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);}
             span.association-graph-compare::before { content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjUuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy8/fFQqAAAACXBIWXMAAA9hAAAPYQGoP6dpAAAC0klEQVR4nO3dMWsTYRzH8W+Pw4IQrZFu3RwUfAW+AMHxBm+4gjo46Obk0EmciiCOToIu8gy3HLi4ufkOinSvVSqItSLWJQ5JyBlySdqY3M/c7wOBpnla/twXQi/w9FnpdDqYjqjuAexvDiLGQcQ4iBgHEeMgYhxETJSlyW6WJjfqHsS6IuAV8DpLk7M1z2J0gzwH2sDVmmcxIA55cZilCcD6qAVZmqwCq0PfbgNf5zva0mkB+yEvxn5WFZe+rlq4BTz6V1M13AbwcdyCOEuTc72vDyrWbAPPSs9bwF7vlx/NOmFD9K/ZxOsVA/eBL8DOqAUhL46B4/7z3tsbwFHIi+8zDtoIpWs2UQTcBW6FvPg1r4FsenHIi8t1D2EDvlMX4yBiHESMg4hxEDEOIsZBxDiIGAcR4yBiHESMg4hxEDEOIsZBxDiIGAcR4yBiHESMg4hxEDEOIsZBxDiIGAcR4yBiHESMg4hxEDFxlib9nVOtkBc/ap3GiIELAI6hIQ558a3uIWwgytLkQ5Ymm3UPYl0xEICXWZq8C3nxaXjBiG3RrUUN10QR8BQ4A1ypWLMFHJYee4sZrZki4DbwG9itWLMNnC89NhYzWjPFwEO6u3D3Ry0Ysy3a5iAOeXGp7iFswHfqYhxEjIOIcRAxDiLGQcQ4iBgHEeMgYhxEjIOIcRAxDiLGQcQ4iBgHEeMgYhxEjIOIcRAxDiLGQcQ4iBgHEeMgYhxEjIOIcRAxDiLGQcT4cGIxPpxYjA8nFnOaw4n7u3Bb3t42tal3Ls9yOLF3455cGxh7XO0yHU6sOhcMZpt45PnSHE6sOhf4cOL/mg8nFnOaO/Vj4DGltzERqnPBCWZb6XSq/riyOvizLDEOIsZBxMRVL2RpchN4AlwE3gD3Ql78LL2+BrwArgOfgQchL97OddrpZ7sGvB/6sYX8k88sTdaBTeAO3duJnaHX1xhz3f4AKke0M4uhMrYAAAAASUVORK5CYII=);}
         span.graph-legend { content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAAbCAYAAACgNfE3AAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjUuMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy8/fFQqAAAACXBIWXMAAA9hAAAPYQGoP6dpAAADa0lEQVR4nO3dT6jmUxzH8fcZ0yRkzJGmWxp/EhLGQsTIsBELytj4U0xpNtNMcRlnYWMwi1MWuiVSmJR/MyuJMkhoyp8YYuGKaDJk4XQnxnX9Oxbnd7tPlxl3xo/7uN6venr+/M45v/P8Vp++5zzPL9RakSRJUn8WzfcEJEmSFhoDliRJUs8MWJIkST1bPN8TkGYLuVwCvNq9/a57fUtN8fMD9FkLfFVT3PEXbR6b9fEDNcUNf2e+kiTNZgVLw+x44FxgEngt5HL0AdquBS6bw5gFWDbw2DR4MOQSDmmmkiQNsIKlYba3prgn5HIzsAe4IeQyCdwJjNAqW9cD24HVwOqQy1G00DQGXAn8CmypKY51Y9aa4sTgSUIudwE3AT8BL4RcMvAgcCmwF9hUU9wWctkKnAocDpwMPAIEWrj7GlhTUxwPuZwAbAXOBz4G1tUU3+31ykiShpoBS0Ovprgv5DIOnAccBtwOvA+8AqwDrgFeBHYBdwAXAVPABcBKYFvI5cluuBhymRgY/ozu+RjgCuAj4CrgU+BW4Grg4ZDL9q7dsd3xC4FHgXuBc4BngY3ABuAJ4APgOmB9127l/r5fyOUf/6+UmqKVOUn6F7lEqP+SH4GXgc3Ae8CJwEhNcR/wCzBVU5wEdtKC2A5mqkzLuzEmaIFo+vFN9/lnNcU3a4rf04LbCuB14B5gKXBE1+7DmuI4M3vEnqkp7qYFquUhl2XAKuBGWvVqFDgr5LKkv8sgSRp2VrA09EIuRwKnAc/TNqnfBjxHqxT9WWVmFLicVkECeGOg3W81xS9mjT+7/xbaUuAa4BTgqf2c5w9TBaarUaPASwPHfp5Df0nSAmEFS8NsacjldFqomq4sLQI+AY4DThpoOwWsCLlEWsWp0PZFrTqU89IqW9/SlhnnrNvf9Q5tX9Zi4ExgY03RWyZI0v+IAUvD7EvgLWAJcHFNcSdwH/A08BCwm7bZHeBxWtVqM3A/8ANtn9bZtKrSCHN3N+0XjLuYWVo8mP7XAvu6848Bbx9EX0nSAhC8F6E0v9zkLkkLjwFLkiSpZy4RSpIk9cyAJUmS1DMDliRJUs8MWJIkST0zYEmSJPXMgCVJktQzA5YkSVLPDFiSJEk9M2BJkiT1zIAlSZLUMwOWJElSzwxYkiRJPTNgSZIk9ex3VJ3LrduhOHAAAAAASUVORK5CYII=);}
     </style>
@@ -570,7 +572,7 @@ button
             <div class="pos-dataframe-summary-title-compare-none text-dataframe-title-small color-title-disabled">NO COMPARISON TARGET</div>
         <div class="pos-dataframe-summary-rows">
             <div class="dataframe-summary-row row-colored">
-                <div class="pos-df-summary-source color-source">1</div>
+                <div class="pos-df-summary-source color-source">3</div>
                 <div class="pos-df-summary-center">ROWS</div>
                 <div class="pos-df-summary-compare color-compare"></div>
             </div>
@@ -580,7 +582,7 @@ button
                 <div class="pos-df-summary-compare color-compare"></div>
             </div>
             <div class="dataframe-summary-row row-colored">
-                <div class="pos-df-summary-source color-source">885b</div>
+                <div class="pos-df-summary-source color-source">2.3 kb</div>
                 <div class="pos-df-summary-center">RAM</div>
                 <div class="pos-df-summary-compare color-compare"></div>
             </div>
@@ -593,7 +595,7 @@ button
                 </div>
             </div>
             <div class="dataframe-summary-row row-colored">
-                <div class="pos-df-summary-source color-source">0</div>
+                <div class="pos-df-summary-source color-source">1</div>
                 <div class="pos-df-summary-center">CATEGORICAL</div>
                 <div class="pos-df-summary-compare color-compare"></div>
             </div>
@@ -603,7 +605,7 @@ button
                 <div class="pos-df-summary-compare color-compare"></div>
             </div>
             <div class="dataframe-summary-row row-colored">
-                <div class="pos-df-summary-source color-source">12</div>
+                <div class="pos-df-summary-source color-source">11</div>
                 <div class="pos-df-summary-center">TEXT</div>
                 <div class="pos-df-summary-compare color-compare"></div>
             </div>
@@ -646,7 +648,7 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label  ">VALUES:</div>
             <div class="text-value color-source pos-base-stats__source">
-                1
+                3
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
                 (100%)
@@ -666,10 +668,10 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label ">DISTINCT:</div>
             <div class="text-distinct color-source pos-base-stats__source">
-                1
+                2
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
-                (100%)
+                (67%)
             </div>
         </div>
     </div>
@@ -677,8 +679,21 @@ button
     <div class="pos-summary-text">
         <div class="breakdown-row text-value " style="width: 618px;">
             <div class="pair__col color-source">
+                <div class="pair-pos__num dim">2</div>
+                <div class="pair-pos__perc">67%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 519px;">
+                koko
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 618px;">
+            <div class="pair__col color-source">
                 <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__perc">33%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -710,7 +725,7 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label  ">VALUES:</div>
             <div class="text-value color-source pos-base-stats__source">
-                1
+                3
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
                 (100%)
@@ -730,7 +745,7 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label ">DISTINCT:</div>
             <div class="text-distinct color-source pos-base-stats__source">
-                1
+                3
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
                 (100%)
@@ -742,7 +757,7 @@ button
         <div class="breakdown-row text-value " style="width: 618px;">
             <div class="pair__col color-source">
                 <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__perc">33%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -750,6 +765,32 @@ button
                 </div>
             <div class="summary-text color-normal" style="left: 99px; width: 519px;">
                 4561
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 618px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 519px;">
+                8374
+            </div>
+        </div>
+        <div class="breakdown-row text-value " style="width: 618px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 519px;">
+                7364
             </div>
         </div>
     </div>
@@ -774,7 +815,7 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label  ">VALUES:</div>
             <div class="text-value color-source pos-base-stats__source">
-                1
+                3
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
                 (100%)
@@ -794,10 +835,10 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label ">DISTINCT:</div>
             <div class="text-distinct color-source pos-base-stats__source">
-                1
+                2
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
-                (100%)
+                (67%)
             </div>
         </div>
     </div>
@@ -805,8 +846,8 @@ button
     <div class="pos-summary-text">
         <div class="breakdown-row text-value " style="width: 618px;">
             <div class="pair__col color-source">
-                <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__num dim">2</div>
+                <div class="pair-pos__perc">67%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -814,6 +855,19 @@ button
                 </div>
             <div class="summary-text color-normal" style="left: 99px; width: 519px;">
                 234567
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 618px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 519px;">
+                812988
             </div>
         </div>
     </div>
@@ -838,7 +892,7 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label  ">VALUES:</div>
             <div class="text-value color-source pos-base-stats__source">
-                1
+                3
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
                 (100%)
@@ -858,7 +912,7 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label ">DISTINCT:</div>
             <div class="text-distinct color-source pos-base-stats__source">
-                1
+                3
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
                 (100%)
@@ -870,7 +924,7 @@ button
         <div class="breakdown-row text-value " style="width: 618px;">
             <div class="pair__col color-source">
                 <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__perc">33%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -878,6 +932,32 @@ button
                 </div>
             <div class="summary-text color-normal" style="left: 99px; width: 519px;">
                 2.04
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 618px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 519px;">
+                2.05
+            </div>
+        </div>
+        <div class="breakdown-row text-value " style="width: 618px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 519px;">
+                2.03
             </div>
         </div>
     </div>
@@ -902,7 +982,7 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label  ">VALUES:</div>
             <div class="text-value color-source pos-base-stats__source">
-                1
+                3
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
                 (100%)
@@ -922,10 +1002,10 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label ">DISTINCT:</div>
             <div class="text-distinct color-source pos-base-stats__source">
-                1
+                2
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
-                (100%)
+                (67%)
             </div>
         </div>
     </div>
@@ -933,8 +1013,8 @@ button
     <div class="pos-summary-text">
         <div class="breakdown-row text-value " style="width: 618px;">
             <div class="pair__col color-source">
-                <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__num dim">2</div>
+                <div class="pair-pos__perc">67%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -942,6 +1022,19 @@ button
                 </div>
             <div class="summary-text color-normal" style="left: 99px; width: 519px;">
                 88
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 618px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 519px;">
+                54
             </div>
         </div>
     </div>
@@ -966,7 +1059,7 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label  ">VALUES:</div>
             <div class="text-value color-source pos-base-stats__source">
-                1
+                3
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
                 (100%)
@@ -986,10 +1079,10 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label ">DISTINCT:</div>
             <div class="text-distinct color-source pos-base-stats__source">
-                1
+                2
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
-                (100%)
+                (67%)
             </div>
         </div>
     </div>
@@ -997,8 +1090,21 @@ button
     <div class="pos-summary-text">
         <div class="breakdown-row text-value " style="width: 618px;">
             <div class="pair__col color-source">
+                <div class="pair-pos__num dim">2</div>
+                <div class="pair-pos__perc">67%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 519px;">
+                16
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 618px;">
+            <div class="pair__col color-source">
                 <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__perc">33%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -1014,7 +1120,7 @@ button
                 </div>
                 <div class="pos-feature-summary" style="top: 0.0px">
                     <div class="container-feature-summary" id="summary-f6"
-        style="top: 0px">
+     style="top: 0px">
     <div class="selector selector__body" data-detail-div="detail-f6" data-rollover-span="rollover-f6"></div>
     <div class="selector selector__bottom" data-detail-div="detail-f6" data-rollover-span="rollover-f6"></div>
     <div class="selector selector__top" data-detail-div="detail-f6" data-rollover-span="rollover-f6"></div>
@@ -1024,13 +1130,13 @@ button
         >
         7
     </div>
-    <div class="pos-tab-image ic-text"></div>
-    <span class="text-title-tab color-normal">jumper</span>
+    <div class="pos-tab-image ic-cat"></div>
+    <span class="text-title-tab color-normal ">jumper</span>
     <div class="pos-base-stats">
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label  ">VALUES:</div>
             <div class="text-value color-source pos-base-stats__source">
-                1
+                3
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
                 (100%)
@@ -1050,29 +1156,14 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label ">DISTINCT:</div>
             <div class="text-distinct color-source pos-base-stats__source">
-                1
+                2
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
-                (100%)
+                (67%)
             </div>
         </div>
     </div>
-
-    <div class="pos-summary-text">
-        <div class="breakdown-row text-value " style="width: 618px;">
-            <div class="pair__col color-source">
-                <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
-            </div>
-                <div class="pair__col color-compare" style="position: absolute; left: px">
-                    <div class="pair-pos__num dim">-</div>
-                    <div class="pair-pos__perc">-</div>
-                </div>
-            <div class="summary-text color-normal" style="left: 99px; width: 519px;">
-                No
-            </div>
-        </div>
-    </div>
+    <span class="minigraph-f6 pos-minigraph-cat"></span>
 </div>
                     <!-- This DETAIL WINDOW (VERTICAL ONLY) -->
                 </div>
@@ -1094,7 +1185,7 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label  ">VALUES:</div>
             <div class="text-value color-source pos-base-stats__source">
-                1
+                3
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
                 (100%)
@@ -1114,10 +1205,10 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label ">DISTINCT:</div>
             <div class="text-distinct color-source pos-base-stats__source">
-                1
+                2
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
-                (100%)
+                (67%)
             </div>
         </div>
     </div>
@@ -1125,8 +1216,8 @@ button
     <div class="pos-summary-text">
         <div class="breakdown-row text-value " style="width: 618px;">
             <div class="pair__col color-source">
-                <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__num dim">2</div>
+                <div class="pair-pos__perc">67%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -1134,6 +1225,19 @@ button
                 </div>
             <div class="summary-text color-normal" style="left: 99px; width: 519px;">
                 No power
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 618px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 519px;">
+                Looped buzzer
             </div>
         </div>
     </div>
@@ -1158,7 +1262,7 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label  ">VALUES:</div>
             <div class="text-value color-source pos-base-stats__source">
-                1
+                3
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
                 (100%)
@@ -1178,7 +1282,7 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label ">DISTINCT:</div>
             <div class="text-distinct color-source pos-base-stats__source">
-                1
+                3
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
                 (100%)
@@ -1190,7 +1294,7 @@ button
         <div class="breakdown-row text-value " style="width: 618px;">
             <div class="pair__col color-source">
                 <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__perc">33%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -1198,6 +1302,32 @@ button
                 </div>
             <div class="summary-text color-normal" style="left: 99px; width: 519px;">
                 asdefrghjki
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 618px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 519px;">
+                
+            </div>
+        </div>
+        <div class="breakdown-row text-value " style="width: 618px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 519px;">
+                not really
             </div>
         </div>
     </div>
@@ -1222,7 +1352,7 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label  ">VALUES:</div>
             <div class="text-value color-source pos-base-stats__source">
-                1
+                3
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
                 (100%)
@@ -1245,7 +1375,7 @@ button
                 1
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
-                (100%)
+                (33%)
             </div>
         </div>
     </div>
@@ -1253,7 +1383,7 @@ button
     <div class="pos-summary-text">
         <div class="breakdown-row text-value " style="width: 618px;">
             <div class="pair__col color-source">
-                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__num dim">3</div>
                 <div class="pair-pos__perc">100%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
@@ -1286,7 +1416,7 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label  ">VALUES:</div>
             <div class="text-value color-source pos-base-stats__source">
-                1
+                3
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
                 (100%)
@@ -1306,10 +1436,10 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label ">DISTINCT:</div>
             <div class="text-distinct color-source pos-base-stats__source">
-                1
+                2
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
-                (100%)
+                (67%)
             </div>
         </div>
     </div>
@@ -1317,8 +1447,21 @@ button
     <div class="pos-summary-text">
         <div class="breakdown-row text-value " style="width: 618px;">
             <div class="pair__col color-source">
+                <div class="pair-pos__num dim">2</div>
+                <div class="pair-pos__perc">67%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 519px;">
+                12_02_21
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 618px;">
+            <div class="pair__col color-source">
                 <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__perc">33%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -1350,7 +1493,7 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label  ">VALUES:</div>
             <div class="text-value color-source pos-base-stats__source">
-                1
+                3
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
                 (100%)
@@ -1370,7 +1513,7 @@ button
         <div class="base-stats-row">
             <div class="text-label color-normal pos-base-stats__label ">DISTINCT:</div>
             <div class="text-distinct color-source pos-base-stats__source">
-                1
+                3
             </div>
             <div class="text-value color-source pos-base-stats__source-perc">
                 (100%)
@@ -1382,7 +1525,7 @@ button
         <div class="breakdown-row text-value " style="width: 618px;">
             <div class="pair__col color-source">
                 <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__perc">33%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -1390,6 +1533,32 @@ button
                 </div>
             <div class="summary-text color-normal" style="left: 99px; width: 519px;">
                 4561_12_01_21.json
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 618px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 519px;">
+                8374_12_02_21.json
+            </div>
+        </div>
+        <div class="breakdown-row text-value " style="width: 618px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 519px;">
+                7364_12_02_21.json
             </div>
         </div>
     </div>
@@ -1458,8 +1627,21 @@ button
     <div class="pos-detail-text"  >
         <div class="breakdown-row text-value " style="width: 800px;">
             <div class="pair__col color-source">
+                <div class="pair-pos__num dim">2</div>
+                <div class="pair-pos__perc">67%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 701px;">
+                koko
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 800px;">
+            <div class="pair__col color-source">
                 <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__perc">33%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -1497,7 +1679,7 @@ button
         <div class="breakdown-row text-value " style="width: 800px;">
             <div class="pair__col color-source">
                 <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__perc">33%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -1505,6 +1687,32 @@ button
                 </div>
             <div class="summary-text color-normal" style="left: 99px; width: 701px;">
                 4561
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 800px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 701px;">
+                8374
+            </div>
+        </div>
+        <div class="breakdown-row text-value " style="width: 800px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 701px;">
+                7364
             </div>
         </div>
     </div>
@@ -1534,8 +1742,8 @@ button
     <div class="pos-detail-text"  >
         <div class="breakdown-row text-value " style="width: 800px;">
             <div class="pair__col color-source">
-                <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__num dim">2</div>
+                <div class="pair-pos__perc">67%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -1543,6 +1751,19 @@ button
                 </div>
             <div class="summary-text color-normal" style="left: 99px; width: 701px;">
                 234567
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 800px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 701px;">
+                812988
             </div>
         </div>
     </div>
@@ -1573,7 +1794,7 @@ button
         <div class="breakdown-row text-value " style="width: 800px;">
             <div class="pair__col color-source">
                 <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__perc">33%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -1581,6 +1802,32 @@ button
                 </div>
             <div class="summary-text color-normal" style="left: 99px; width: 701px;">
                 2.04
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 800px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 701px;">
+                2.05
+            </div>
+        </div>
+        <div class="breakdown-row text-value " style="width: 800px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 701px;">
+                2.03
             </div>
         </div>
     </div>
@@ -1610,8 +1857,8 @@ button
     <div class="pos-detail-text"  >
         <div class="breakdown-row text-value " style="width: 800px;">
             <div class="pair__col color-source">
-                <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__num dim">2</div>
+                <div class="pair-pos__perc">67%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -1619,6 +1866,19 @@ button
                 </div>
             <div class="summary-text color-normal" style="left: 99px; width: 701px;">
                 88
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 800px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 701px;">
+                54
             </div>
         </div>
     </div>
@@ -1648,8 +1908,21 @@ button
     <div class="pos-detail-text"  >
         <div class="breakdown-row text-value " style="width: 800px;">
             <div class="pair__col color-source">
+                <div class="pair-pos__num dim">2</div>
+                <div class="pair-pos__perc">67%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 701px;">
+                16
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 800px;">
+            <div class="pair__col color-source">
                 <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__perc">33%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -1666,9 +1939,9 @@ button
                 <div class="isHidden container-feature-detail"
      id="detail-f6">
 <div class="container-feature-detail__offset">
-        <span class="bg-tab-detail-wide" style="left: 12px"></span>
+        <span class="bg-tab-detail-med"></span>
         <div class="pos-detail-tab-icon-text__offset">
-            <div class="pos-tab-image ic-text"></div>
+            <div class="pos-tab-image ic-cat"></div>
             <span class="text-title-tab">jumper</span>
         </div>
     <div class="pos-base-stats-in-detail">
@@ -1683,24 +1956,95 @@ button
         </div>
 </div>
 
-    <div class="pos-detail-text"  >
-        <div class="breakdown-row text-value " style="width: 800px;">
-            <div class="pair__col color-source">
-                <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
-            </div>
-                <div class="pair__col color-compare" style="position: absolute; left: px">
-                    <div class="pair-pos__num dim">-</div>
-                    <div class="pair-pos__perc">-</div>
+    <span class="detail_graph-f6-
+                pos-detail-cat-graph" id="detail_graph-f6"
+    style="top: 75px;"></span>
+
+    <div class="pos-detail-cat-breakdown " id="detail_breakdown-f6"
+        style="top: 204.0px;"> <!-- height: 706.0px;"> WHY was this needed? Causes issue in vertical layout. -->
+        <!-- HEADER ROW -->
+        <div class="breakdown-row-header text-value" style="width:553px">
+            <div class="text-med-bold" style="position: absolute; left:10px">TOP CATEGORIES</div>
+            <div class="breakdown-hr"><hr></div>
+            <div class="pair__header color-source" style="left: 48px"></div>
+            <!-- Targets -->
+                <div class="pair__header color-compare" style="position: absolute; left: px">
+                    <!--None-->
                 </div>
-            <div class="summary-text color-normal" style="left: 99px; width: 701px;">
-                No
+        </div>
+
+        <!-- ROW CONTENT -->
+            <div class="breakdown-row text-value " style="width:553px">
+                <!-- Name -->
+                <div class="text-label color-normal " style="position: absolute; left:10px;
+                width: 48px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">No</div>
+
+                <!-- Freq -->
+                <div class="pair__col color-source" style="left: 48px">
+                    <div class="pair-pos__num dim">2</div>
+                    <div class="pair-pos__perc">67%</div>
+                </div>
+                <!-- Targets -->
             </div>
+            <div class="breakdown-row text-value row-colored" style="width:553px">
+                <!-- Name -->
+                <div class="text-label color-normal " style="position: absolute; left:10px;
+                width: 48px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Yes</div>
+
+                <!-- Freq -->
+                <div class="pair__col color-source" style="left: 48px">
+                    <div class="pair-pos__num dim">1</div>
+                    <div class="pair-pos__perc">33%</div>
+                </div>
+                <!-- Targets -->
+            </div>
+                <div class="breakdown-row text-value" style="width:553px">
+                </div>
+            <div class="breakdown-row text-value " style="width:553px">
+                <!-- Name -->
+                <div class="text-label color-normal " style="position: absolute; left:10px;
+                width: 48px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">ALL</div>
+
+                <!-- Freq -->
+                <div class="pair__col color-source" style="left: 48px">
+                    <div class="pair-pos__num dim">3</div>
+                    <div class="pair-pos__perc">100%</div>
+                </div>
+                <!-- Targets -->
+            </div>
+        <div id="detail_cat_end-6"></div>
+    </div>
+
+    <!-- ASSOCIATIONS -->
+    <div class="pos-detail-cat-assoc-1" id="cat-assoc-CC-f6">
+        <!-- no background for target in vertical mode -->
+        <span class="bg-extra-column"></span>
+        <div class="container-detail-assoc " id="cat-assoc-window-f6">
+            <!-- CAT-CAT -->
+            <div class="text-small-bold color-light" style="text-align:right; line-height: 10px">
+                CATEGORICAL ASSOCIATIONS<br>
+                (UNCERTAINTY COEFFICIENT, 0 to 1)
+            </div>
+            <div class="text-large-bold" style="line-height: 104%;">jumper<br>
+            PROVIDES INFORMATION ON...</div>
+            <hr>
+            <br>
+            <div class="text-large-bold" style="line-height: 104%;">THESE FEATURES<br>GIVE INFORMATION<br>
+            ON jumper:</div>
+            <hr>
+            <br>
+            <!-- CAT-NUM -->
+            <div class="text-small-bold color-light" style="text-align:right; line-height: 10px">
+                NUMERICAL ASSOCIATIONS<br>
+                (CORRELATION RATIO, 0 to 1)
+            </div>
+            <div class="text-large-bold" style="line-height: 104%;">jumper<br>
+                    CORRELATION RATIO WITH...</div>
+            <hr>
         </div>
     </div>
 </div>
 </div>
-
                 <div class="isHidden container-feature-detail"
      id="detail-f7">
 <div class="container-feature-detail__offset">
@@ -1724,8 +2068,8 @@ button
     <div class="pos-detail-text"  >
         <div class="breakdown-row text-value " style="width: 800px;">
             <div class="pair__col color-source">
-                <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__num dim">2</div>
+                <div class="pair-pos__perc">67%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -1733,6 +2077,19 @@ button
                 </div>
             <div class="summary-text color-normal" style="left: 99px; width: 701px;">
                 No power
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 800px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 701px;">
+                Looped buzzer
             </div>
         </div>
     </div>
@@ -1763,7 +2120,7 @@ button
         <div class="breakdown-row text-value " style="width: 800px;">
             <div class="pair__col color-source">
                 <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__perc">33%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -1771,6 +2128,32 @@ button
                 </div>
             <div class="summary-text color-normal" style="left: 99px; width: 701px;">
                 asdefrghjki
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 800px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 701px;">
+                
+            </div>
+        </div>
+        <div class="breakdown-row text-value " style="width: 800px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 701px;">
+                not really
             </div>
         </div>
     </div>
@@ -1800,7 +2183,7 @@ button
     <div class="pos-detail-text"  >
         <div class="breakdown-row text-value " style="width: 800px;">
             <div class="pair__col color-source">
-                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__num dim">3</div>
                 <div class="pair-pos__perc">100%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
@@ -1838,8 +2221,21 @@ button
     <div class="pos-detail-text"  >
         <div class="breakdown-row text-value " style="width: 800px;">
             <div class="pair__col color-source">
+                <div class="pair-pos__num dim">2</div>
+                <div class="pair-pos__perc">67%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 701px;">
+                12_02_21
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 800px;">
+            <div class="pair__col color-source">
                 <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__perc">33%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -1877,7 +2273,7 @@ button
         <div class="breakdown-row text-value " style="width: 800px;">
             <div class="pair__col color-source">
                 <div class="pair-pos__num dim">1</div>
-                <div class="pair-pos__perc">100%</div>
+                <div class="pair-pos__perc">33%</div>
             </div>
                 <div class="pair__col color-compare" style="position: absolute; left: px">
                     <div class="pair-pos__num dim">-</div>
@@ -1885,6 +2281,32 @@ button
                 </div>
             <div class="summary-text color-normal" style="left: 99px; width: 701px;">
                 4561_12_01_21.json
+            </div>
+        </div>
+        <div class="breakdown-row text-value row-colored" style="width: 800px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 701px;">
+                8374_12_02_21.json
+            </div>
+        </div>
+        <div class="breakdown-row text-value " style="width: 800px;">
+            <div class="pair__col color-source">
+                <div class="pair-pos__num dim">1</div>
+                <div class="pair-pos__perc">33%</div>
+            </div>
+                <div class="pair__col color-compare" style="position: absolute; left: px">
+                    <div class="pair-pos__num dim">-</div>
+                    <div class="pair-pos__perc">-</div>
+                </div>
+            <div class="summary-text color-normal" style="left: 99px; width: 701px;">
+                7364_12_02_21.json
             </div>
         </div>
     </div>
