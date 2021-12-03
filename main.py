@@ -37,6 +37,8 @@ def showAnalytics():
 
     #print('here is the error')
     my_report.show_html()  # Default arguments will generate to "SWEETVIZ_REPORT.html"
+    # File Output
+    put_html('SWEETVIZ_REPORT.html')
 
 def main():
     # For automatic reconnection
@@ -78,11 +80,10 @@ def main():
         saveFiles(infoAll)
         #print (f'THIS:{info}')
         #THIS:{'buttons': 'save'}
-        return print("Logged OK!!")
+
     if info['buttons'] == 'confirm':
         showAnalytics()
     start_server(main, port=8986)
-    return print ('exited')
 
 if __name__ == '__main__':
     start_server(main, port=8986) #http://localhost:8986/
