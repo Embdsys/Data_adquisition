@@ -1,0 +1,13 @@
+{
+    "name": "lolo",
+    "uuid": 4561,
+    "serial_number": 234567,
+    "firmware_version": 2.04,
+    "BT_reads": "",
+    "fob_reads": "",
+    "jumper": null,
+    "failure": null,
+    "notes": "",
+    "buttons": "save",
+    "date": "12_04_21"
+}

@@ -1,0 +1,13 @@
+{
+    "name": "koko",
+    "uuid": 7364,
+    "serial_number": 812988,
+    "firmware_version": 2.03,
+    "BT_reads": "",
+    "fob_reads": "",
+    "jumper": null,
+    "failure": null,
+    "notes": "",
+    "buttons": "save",
+    "date": "12_04_21"
+}

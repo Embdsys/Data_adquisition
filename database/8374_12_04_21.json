@@ -1,0 +1,13 @@
+{
+    "name": "koko",
+    "uuid": 8374,
+    "serial_number": 666777,
+    "firmware_version": 2.03,
+    "BT_reads": "46",
+    "fob_reads": "56",
+    "jumper": "Yes",
+    "failure": "Looped buzzer",
+    "notes": "w;kmad;a",
+    "buttons": "save",
+    "date": "12_04_21"
+}

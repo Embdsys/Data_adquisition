@@ -1,0 +1,13 @@
+{
+    "name": "",
+    "uuid": null,
+    "serial_number": null,
+    "firmware_version": null,
+    "BT_reads": "",
+    "fob_reads": "",
+    "jumper": null,
+    "failure": null,
+    "notes": "",
+    "buttons": "save",
+    "date": "12_04_21"
+}

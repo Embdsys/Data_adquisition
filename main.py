@@ -7,6 +7,8 @@ import pandas as pd
 import json
 import file_manipulation
 import Data_database
+import codecs
+from bs4 import BeautifulSoup
 
 def saveFiles(data):
     # Puts data in the /database folder
@@ -29,16 +31,15 @@ def saveFiles(data):
     Data_database.log_data(name, date, uuid, serial_number, firmware_version, BT_reads, fob_reads, jumper, failure, notes[0])
 
 def showAnalytics():
-    # Finds all .json files in /database folder, returns them as df
+    """Build Sweetviz report and show in webpage"""
     df = file_manipulation.mergeJsonToDf('database')
-
-    # Builds a report from df
-    my_report = sv.analyze(df)
-
-    #print('here is the error')
-    my_report.show_html()  # Default arguments will generate to "SWEETVIZ_REPORT.html"
-    # File Output
-    put_html('SWEETVIZ_REPORT.html')
+    with put_loading(shape='grow'):
+        report = sv.analyze(df)
+        report.show_html()
+    #This is the part I was having issues
+    with open('SWEETVIZ_REPORT.html', 'r') as f:
+        html = f.read()
+        put_html(html)
 
 def main():
     # For automatic reconnection
@@ -48,21 +49,19 @@ def main():
     data = {'submit': False}
 
     # Put a label on top of window
-    put_text("For help visit www.helpmeout.com")
-
     # Create a info dictionary that will be empty until you click something
     info = input_group('Add data',[
-        input("Approved by:", placeholder='Your name', name='name'),
-        input("UUID:", placeholder='4-digits', name='uuid'),
-        input("Serial Number:", placeholder='6-digits', name='serial_number'),
-        input("Firmware Version:", placeholder='From read', name='firmware_version'),
-        input("BT reads :", placeholder='100', name='BT_reads'),
-        input("Fob reads:", placeholder='100', name='fob_reads'),
+        input("Approved by:",type=TEXT, placeholder='Your name', name='name', required=True),
+        input("UUID:",type=FLOAT, placeholder='4-digits', name='uuid',required=True),
+        input("Serial Number:", type=FLOAT, placeholder='6-digits', name='serial_number',required=True),
+        input("Firmware Version:",type=FLOAT, placeholder='From read', name='firmware_version',required=True),
+        input("BT reads :",TYPE=NUMBER, placeholder='100', name='BT_reads'),
+        input("Fob reads:",TYPE=NUMBER, placeholder='100', name='fob_reads'),
     ])
 
     # Create a info dictionary that will be empty until you click something
     info2 = input_group('Add data:', [
-        radio("Jumper on?", options=['Yes', 'No'], name= 'jumper'),
+        radio("Jumper on?",inline=True , options=['Yes', 'No'], name= 'jumper'),
         radio("Test result:", options=['Locked nfc', 'No power', 'No fob read', 'Looped buzzer', 'No bt', 'All good'], name= "failure"),
         textarea('notes', rows=3, placeholder='Anything weird?', name='notes'),
         actions('', [
@@ -89,7 +88,7 @@ def main():
 
     if info3['buttons'] == 'confirm':
         showAnalytics()
-    start_server(main, port=8986)
+    start_server(main, port=8986, debug=True)
 
 if __name__ == '__main__':
     start_server(main, port=8986) #http://localhost:8986/
